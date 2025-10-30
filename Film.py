@@ -25,7 +25,7 @@ def film_oner(film_adi):
     benzerlikler = sorted(benzerlikler, key=lambda x: x[1], reverse=True)
 
     öneriler = []
-    for i, skor in benzerlikler[1:4]:  # En benzer 3 filmi öner
+    for i, skor in benzerlikler[1:4]:
         öneriler.append(df.iloc[i]['film'])
 
     return öneriler
