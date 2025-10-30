@@ -46,7 +46,7 @@ film_girdisi = input("Bir film adı girin: ")
 sonuc = film_oner(film_girdisi)
 if isinstance(sonuc, tuple):
     duzeltilmis, öneriler = sonuc
-    print(f"📌 Aradığınız film: {duzeltilmis}")
-    print("🎥 Benzer filmler:", öneriler)
+    print(f"Aradığınız film: {duzeltilmis}")
+    print("Benzer filmler:", öneriler)
 else:
     print(sonuc)
